@@ -35,58 +35,96 @@
         </div>
     </div>
 </header>
-<div class = "big-container">
-    <div class="container">
-        <h2>Emilia Nilsson</h2>
-        <p class="intro">Hello! I'm Emilia, a passionate developer specializing in frontend development. This portfolio showcases some of my projects and skills.</p>
-        <h2>My Projects</h2>
-        <ul>
-            <li>Group Project, Frontend team and backend team worked together making this gym and yoga booking application: 
-            <a href="https://avdrxxa.github.io/webbshop-2026-fe/" target="_blank">View Eventra</a></li>
-
-            <li>AI built todo list, built with lovable: <a href="https://plum-todos.lovable.app/" target="_blank">View AI Todo List</a></li>
-            
-            <li>Javascript Quiz: <a href="https://aen-work.github.io/Projekt-javascript-1/" target="_blank">View vanilla JavaScript quiz</a></li>
-            
-            <li>JavaScript Tamagotchi game built with vanilla JavaScript, no frameworks and AI generated images:
-            <a href="https://aen-work.github.io/tamagotchi/" target="_blank">View JavaScript game</a></li>
-            
-            <li>Login page, CSS <a href="https://aen-work.github.io/Uppgift-9/" target="_blank">View vanilla CSS loginpage</a></li>
-            
-
-
-            
-        </ul>
-    </div>
-    <div class="container-2">
-        <h2>About Me</h2>
-        <p>I'm a passionate frontend-developer from the Stockholm suburbs. I love creating interactive and user-friendly web applications with a playful vibe. My goal is to continuously improve my skills and contribute to exciting projects.
-        I'm on a mission to learn as much as possible about CSS, JavaScript and best practice web design, here is my <a href="https://github.com/aen-work" target="_blank">Github profile</a>, work in progress...
-        Other interest are mainly cats, singing and italian food.
-        </p>
-    </div>
-    <div class="contact">
-        <h2>Contact Me</h2>
-        <p>If you'd like to get in touch, feel free to reach out via email at <a href="mailto:emilianilsson08@gmail.com">emilia.nilsson@yh.nackademin.se</a></p>
-    </div>
-</div>
-    <footer>
-    <div class="footer-content">
-        <h3>Emilia Dev</h3>
-
-        <p class="footer-text">
-            Frontend developer passionate about creating interactive experiences.
-        </p>
-
-        <div class="socials">
-            <a href="https://www.linkedin.com/in/emilia-nilsson-92529470" target="_blank">LinkedIn</a>
-            <a href="https://github.com/aen-work" target="_blank">GitHub</a>
+<main>
+    <section id="projects">
+            <div class="filters" id="filters">
+            <button class="chip active" data-filter="all">All</button>
+            <button class="chip" data-filter="javascript">JavaScript</button>
+            <button class="chip" data-filter="css">CSS</button>
+            <button class="chip" data-filter="team">Team</button>
+            <button class="chip" data-filter="ai">AI</button>
         </div>
+         <div class="grid" id="grid">
+            <article class="card" data-tags="team javascript">
+                <h3>Eventra</h3>
+                <p>Group project: frontend and backend teams built a gym and yoga booking application together.</p>
+                <div class="tags"><span>Team</span><span>JavaScript</span></div>
+                <a href="https://avdrxxa.github.io/webbshop-2026-fe/" target="_blank" rel="noopener">View Eventra</a>
+            </article>
 
-        <p class="copyright">
-            &copy; 2026 Emilia Dev. All rights reserved.
-        </p>
-    </div>
-</footer>
+            <article class="card" data-tags="javascript">
+                <h3>Tamagotchi game</h3>
+                <p>Built with vanilla JavaScript, no frameworks, and AI generated images.</p>
+                <div class="tags"><span>JavaScript</span><span>Game</span></div>
+                <a href="https://aen-work.github.io/tamagotchi/" target="_blank" rel="noopener">View JavaScript game</a>
+            </article>
+
+            <article class="card" data-tags="javascript">
+                <h3>JavaScript Quiz</h3>
+                <p>A quiz built from scratch with vanilla JavaScript.</p>
+                <div class="tags"><span>JavaScript</span></div>
+                <a href="https://aen-work.github.io/Projekt-javascript-1/" target="_blank" rel="noopener">View vanilla JavaScript quiz</a>
+            </article>
+
+            <article class="card" data-tags="css">
+                <h3>Login page</h3>
+                <p>A login page styled with vanilla CSS only.</p>
+                <div class="tags"><span>CSS</span></div>
+                <a href="https://aen-work.github.io/Uppgift-9/" target="_blank" rel="noopener">View vanilla CSS loginpage</a>
+            </article>
+
+            <article class="card" data-tags="ai">
+                <h3>AI todo list</h3>
+                <p>A todo list built with Lovable to explore AI-assisted development.</p>
+                <div class="tags"><span>AI</span><span>Lovable</span></div>
+                <a href="https://plum-todos.lovable.app/" target="_blank" rel="noopener">View AI Todo List</a>
+            </article>
+        </div>
+    </section>
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills">
+            <div>
+                <h3>What I build with</h3>
+                <div class="tags big"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Git &amp; GitHub</span><span>Lovable (AI)</span></div>
+            </div>
+            <div>
+                <h3>What I'm learning now</h3>
+                <div class="tags big"><span>Advanced CSS</span><span>Best practice web design</span><span>Teamwork in code</span></div>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I'm a frontend developer from the Stockholm suburbs. I love creating interactive and user-friendly web applications with a playful vibe. My goal is to continuously improve my skills and contribute to exciting projects.</p>
+        <p>I'm on a mission to learn as much as possible about CSS, JavaScript and best practice web design. Here is my <a href="https://github.com/aen-work" target="_blank" rel="noopener">GitHub profile</a>, work in progress... Other interests are mainly cats, singing and Italian food.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>If you'd like to get in touch, feel free to reach out via email.</p>
+        <a class="mail" href="mailto:emilia.nilsson@yh.nackademin.se">emilia.nilsson@yh.nackademin.se</a>
+        <button class="btn btn-small" id="copyBtn">Copy email</button>
+    </section>
+</div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <h3>Emilia Dev</h3>
+
+            <p class="footer-text">
+                Frontend developer passionate about creating interactive experiences.
+            </p>
+
+            <div class="socials">
+                <a href="https://www.linkedin.com/in/emilia-nilsson-92529470" target="_blank">LinkedIn</a>
+                <a href="https://github.com/aen-work" target="_blank">GitHub</a>
+            </div>
+
+            <p class="copyright">
+                &copy; 2026 Emilia Dev. All rights reserved.
+            </p>
+        </div>
+    </footer>
 </body>
 </html>
