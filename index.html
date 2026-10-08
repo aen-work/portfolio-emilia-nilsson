@@ -4,12 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Emilia dev</title>
+    <title>Emilia Nilsson - Frontend Developer</title>
 </head>
 <body>
-<header>
-    <h1>Emilia Frontend Developer</h1>
+<nav class="nav">
+    <a href="#top" class="logo">emilia<span>.dev</span></a>
+    <ul class="nav-links">
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="theme-btn" id="themeBtn" aria-label="Switch between light and dark theme">🌙</button>
+</nav>
+<header class="hero" id="top">
+    <div class="hero-inner">
+        <h1>Emilia Nilsson</h1>
+        <p class="hero-sub">Frontend developer student who loves building playful, interactive things with vanilla JavaScript and CSS.</p>
+        <div class="hero-btns">
+            <a href="#projects" class="btn">See my projects</a>
+            <a href="https://github.com/aen-work" target="_blank" rel="noopener" class="btn btn-ghost">GitHub</a>
+        </div>
+
+        <div class="stats">
+            <div><strong class="count" data-target="5">0</strong><span>projects</span></div>
+            <div><strong class="count" data-target="3">0</strong><span>built with vanilla JS &amp; CSS</span></div>
+            <div><strong class="count" data-target="1">0</strong><span>team project</span></div>
+        </div>
+    </div>
 </header>
 <div class = "big-container">
     <div class="container">
