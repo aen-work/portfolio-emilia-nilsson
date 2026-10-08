@@ -56,3 +56,24 @@ cards.forEach((card) => {
     });
 });
 
+// Räknare som räknar upp när sidan laddas
+document.querySelectorAll(".count").forEach((el) => {
+    const target = +el.dataset.target;
+    let n = 0;
+    const step = () => {
+        n += 1;
+        el.textContent = n;
+        if (n < target) setTimeout(step, 250);
+    };
+    if (target > 0) setTimeout(step, 600);
+});
+
+// Kopiera e-post
+document.getElementById("copyBtn").addEventListener("click", async () => {
+    try {
+        await navigator.clipboard.writeText(document.querySelector(".mail").textContent);
+        showToast("Email copied!");
+    } catch {
+        showToast("Could not copy. Select the email manually.");
+    }
+});
