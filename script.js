@@ -72,8 +72,8 @@ document.querySelectorAll(".count").forEach((el) => {
 document.getElementById("copyBtn").addEventListener("click", async () => {
     try {
         await navigator.clipboard.writeText(document.querySelector(".mail").textContent);
-        showToast("Email copied!");
+        alert("Email copied!");
     } catch {
-        showToast("Could not copy. Select the email manually.");
+        alert("Could not copy. Select the email manually.");
     }
 });
